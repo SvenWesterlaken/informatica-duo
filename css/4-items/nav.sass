@@ -1,0 +1,115 @@
+nav
+  z-index: 100
+  //display: none
+
+  .navbar
+    height: 100vh
+    width: 300px
+    position: fixed
+    left: 0
+    top: 0
+    background: $nav
+    color: $offwhite
+    border-radius: 0
+    padding: 0 15px
+    text-align: left
+    z-index: 2
+    box-shadow: 4px 0 12px rgba(0,0,0,0.4)
+
+    .nav-header
+      background: $avans
+      padding: 10px 0
+      position: absolute
+      width: 100%
+      box-sizing: padding-box
+      top: 0
+      left: 0
+      z-index: 1
+
+      .menubtn
+        padding: 5px 8px
+        border: 2px solid transparent
+        margin: 0 0 0 5px
+        cursor: pointer
+
+    .nav-body
+      z-index: 1
+
+
+      .logo
+        @include hide-text
+        background:
+          image: url(img/avans.png)
+          repeat: no-repeat
+          size: contain
+        padding: 30px 0
+        margin: 100px 0 20px
+
+      ul
+        list-style: none
+        padding: 0
+        margin: 25px 0 0
+
+        li.nav-item
+          margin: 8px 0
+
+          a, a:visited, a:focus
+            font:
+              size: 20px
+              weight: 700
+            color: $offwhite
+            text-decoration: none
+            outline: none
+            transition: all 0.3s ease-in-out
+
+            &:active, &:hover
+              color: $avans
+              outline: none
+              text-decoration: none
+
+            i
+              margin-right: 8px
+
+  .overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0,0,0,0.4)
+    z-index: 1
+
+header
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3)
+  z-index: 50
+
+  .nav-menu
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    color: white
+    background: $avans
+    padding: 10px 0
+
+    .menubtn
+      padding: 5px 7px
+      margin: 0 10px
+      cursor: pointer
+      transform: rotate(0)
+      border: 2px solid white
+
+    a.homelink
+      font:
+        size: 20px
+        weight: 700
+      text-transform: uppercase
+      margin: 0
+      padding: 0 10px
+      color: white
+      transition: all 0.3s ease-in-out
+
+      &:hover, &:active
+        color: darken(white, 10)
+        text-decoration: none
