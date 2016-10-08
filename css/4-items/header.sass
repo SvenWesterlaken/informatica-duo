@@ -1,0 +1,57 @@
+header
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3)
+  z-index: 50
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+
+  .nav-menu
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    color: white
+    background: $avans
+    padding: 10px 0
+
+    .menubtn
+      padding: 5px 7px
+      margin: 0 10px
+      cursor: pointer
+      transform: rotate(0)
+      border: 2px solid white
+
+    span
+      font:
+        size: 20px
+        weight: 700
+      text-transform: uppercase
+      margin: 0
+      padding: 0 10px
+      color: white
+      transition: all 0.3s ease-in-out
+
+      &:hover, &:active
+        color: darken(white, 10)
+        text-decoration: none
+
+.hero-image
+  background:
+    image: url(img/placeholder.jpg)
+    size: cover
+    repeat: no-repeat
+    position: center center
+  padding: 100px
+  margin: 0
+
+  .container
+    color: white
+    text-align: center
+
+    h1, h3
+      margin: 0
+
+    h3
+      color: $avans

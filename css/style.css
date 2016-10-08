@@ -7700,8 +7700,16 @@ body {
   height: 1px;
 }
 
+.subject-thumb {
+  background: #2E2E2E;
+  text-align: center;
+  color: #FAFAFA;
+  padding-bottom: 20px;
+}
+
 nav {
   z-index: 100;
+  position: relative;
 }
 
 nav .navbar {
@@ -7794,6 +7802,10 @@ nav .overlay {
 header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 header .nav-menu {
@@ -7827,7 +7839,7 @@ header .nav-menu .menubtn {
   border: 2px solid white;
 }
 
-header .nav-menu a.homelink {
+header .nav-menu span {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -7837,7 +7849,29 @@ header .nav-menu a.homelink {
   transition: all 0.3s ease-in-out;
 }
 
-header .nav-menu a.homelink:hover, header .nav-menu a.homelink:active {
+header .nav-menu span:hover, header .nav-menu span:active {
   color: #e6e6e6;
   text-decoration: none;
+}
+
+.hero-image {
+  background-image: url(img/placeholder.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 100px;
+  margin: 0;
+}
+
+.hero-image .container {
+  color: white;
+  text-align: center;
+}
+
+.hero-image .container h1, .hero-image .container h3 {
+  margin: 0;
+}
+
+.hero-image .container h3 {
+  color: #C6002A;
 }
