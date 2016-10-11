@@ -1,7 +1,6 @@
 header
   box-shadow: 0 2px 4px rgba(0,0,0,0.3)
   z-index: 50
-  position: fixed
   top: 0
   left: 0
   width: 100%
@@ -37,21 +36,77 @@ header
         color: darken(white, 10)
         text-decoration: none
 
-.hero-image
-  background:
-    image: url(img/placeholder.jpg)
-    size: cover
-    repeat: no-repeat
-    position: center center
-  padding: 100px
-  margin: 0
+.hero-text
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
 
-  .container
-    color: white
-    text-align: center
+  h1
+    color: $avans
+    font:
+      size: 80pt
+      weight: 700
+    text:
+      transform: uppercase
+      shadow: 4px 4px 10px rgba(0,0,0,0.3)
+    margin: 0
 
-    h1, h3
-      margin: 0
+  h3
+    font:
+      size: 20pt
+      weight: 300
+    color: $nav
+    padding: 0.4em
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3)
+    background: white
+    text-transform: uppercase
+    margin: 0
+    letter-spacing: 0.3em
 
+@media (max-width: 1000px)
+  .hero-text
+    h1
+      font-size: 6em
     h3
-      color: $avans
+      font-size: 1.6em
+
+@media (max-width: 750px)
+  .hero-text
+    h1
+      font-size: 5em
+    h3
+      font-size: 1.5em
+      letter-spacing: 0.3em
+      padding: 0.2em
+
+@media (max-width: 620px)
+  .hero-text
+    h1
+      font-size: 4em
+    h3
+      font-size: 1.2em
+      letter-spacing: 0.3em
+      padding: 0.2em
+
+@media (max-width: 550px)
+  .hero-text
+    h1
+      font-size: 2em
+      letter-spacing: 0.1em
+    h3
+      font-size: 0.8em
+      letter-spacing: 0.2em
+      padding: 0.2em
+
+@media (max-width: 400px)
+  .hero-text
+    transform: translate(-50%, -30%)
+    h1
+      font-size: 2em
+      letter-spacing: 0.1em
+    h3
+      font-size: 0.8em
+      letter-spacing: 0.2em
+      padding: 0.2em

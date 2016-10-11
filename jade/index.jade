@@ -49,16 +49,27 @@ html
                 i(class="fa fa-user fa-fw" aria-hidden="true") 
                 span Contact
       .overlay
-    header.container-fluid
+    header.container-fluid.affix.affix-top
       .row
         .nav-menu.col-md-12
           .menubtn
             i(class="fa fa-bars fa-2x" aria-hidden="true")
           span Informatica
-    #intro.jumbotron.hero-image
-      .container
-        h1 INFORMATICA
-        h3 Een opleiding voor jou?
+    div(id="intro" class="carousel slide hero-image" data-ride="carousel")
+      ol(class="carousel-indicators")
+        li(data-target="#intro" data-slide-to="0" class="active")
+        li(data-target="#intro" data-slide-to="1")
+        li(data-target="#intro" data-slide-to="2")
+      div(class="carousel-inner" role="listbox")
+        div(class="item active")
+          img(src="img/avans1.png" alt="Avans Hogeschool 1")
+        div(class="item")
+          img(src="img/avans2.png" alt="Avans Hogeschool 2")
+        div(class="item")
+          img(src="img/avans3.png" alt="Avans Hogeschool 3")
+        .hero-text
+          h1 Informatica
+          h3 Een opleiding voor jou?
     .container-fluid
       .row#over
         .col-md-12.subject-thumb
@@ -91,13 +102,19 @@ html
           h2 Wat is informatica?
           p Commodo dolor enim dolore amet eu do labore. Nulla mollit deserunt labore fugiat amet aute velit occaecat eiusmod sit incididunt cillum fugiat consectetur cillum. Nulla enim ea qui eiusmod velit adipisicing laborum. Dolore occaecat laborum Lorem deserunt ea magna velit mollit cupidatat culpa qui incididunt officia amet ullamco qui. Dolore proident id ut consectetur quis cupidatat tempor cillum. Consectetur aliquip aliquip in est ad duis reprehenderit elit adipisicing. Ex officia fugiat do eu sit elit aute ullamco nostrud exercitation proident enim aliquip. Excepteur incididunt quis tempor in velit laboris ad ut sit excepteur dolore fugiat excepteur enim in ipsum dolor.
           p Exercitation ut veniam culpa mollit ex tempor sunt consequat dolor Lorem veniam quis consequat est quis. Minim culpa consequat consequat ut proident qui laborum anim in excepteur adipisicing fugiat amet dolore aliqua. Nulla amet magna et qui magna ullamco pariatur ullamco ea est incididunt proident.
-      .row#contact
+      footer.row#contact
         .col-md-12.subject-thumb
-          h2 Wat is informatica?
-          p Commodo dolor enim dolore amet eu do labore. Nulla mollit deserunt labore fugiat amet aute velit occaecat eiusmod sit incididunt cillum fugiat consectetur cillum. Nulla enim ea qui eiusmod velit adipisicing laborum. Dolore occaecat laborum Lorem deserunt ea magna velit mollit cupidatat culpa qui incididunt officia amet ullamco qui. Dolore proident id ut consectetur quis cupidatat tempor cillum. Consectetur aliquip aliquip in est ad duis reprehenderit elit adipisicing. Ex officia fugiat do eu sit elit aute ullamco nostrud exercitation proident enim aliquip. Excepteur incididunt quis tempor in velit laboris ad ut sit excepteur dolore fugiat excepteur enim in ipsum dolor.
-          p Exercitation ut veniam culpa mollit ex tempor sunt consequat dolor Lorem veniam quis consequat est quis. Minim culpa consequat consequat ut proident qui laborum anim in excepteur adipisicing fugiat amet dolore aliqua. Nulla amet magna et qui magna ullamco pariatur ullamco ea est incididunt proident.
-                
-        
+          h2 
+            i(class="fa fa-user fa-fw" aria-hidden="true") 
+            span Contact
+          b Deze site wordt medemogelijk gemaakt door Sven Westerlaken en Cas De Pender uit klas 23IVT1C.
+          p De site is gemaakt in opdracht van Avans Hogeschool voor de eindopdracht van de vakken Studeren op het HBO en Webdesign in het kader van de opleiding Informatica
+        .col-md-6.subject-thumb
+          .profile-pic
+          h3 Sven Westerlaken
+        .col-md-6.subject-thumb
+          .profile-pic
+          h3 Cas De Pender
     
     .scripts
       script(src="https://use.fontawesome.com/82381d76d8.js")

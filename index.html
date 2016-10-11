@@ -29,17 +29,27 @@
       </div>
       <div class="overlay"></div>
     </nav>
-    <header class="container-fluid">
+    <header class="container-fluid affix affix-top">
       <div class="row">
         <div class="nav-menu col-md-12">
           <div class="menubtn"><i aria-hidden="true" class="fa fa-bars fa-2x"></i></div><span>Informatica</span>
         </div>
       </div>
     </header>
-    <div id="intro" class="jumbotron hero-image">
-      <div class="container">
-        <h1>INFORMATICA</h1>
-        <h3>Een opleiding voor jou?</h3>
+    <div id="intro" data-ride="carousel" class="carousel slide hero-image">
+      <ol class="carousel-indicators">
+        <li data-target="#intro" data-slide-to="0" class="active"></li>
+        <li data-target="#intro" data-slide-to="1"></li>
+        <li data-target="#intro" data-slide-to="2"></li>
+      </ol>
+      <div role="listbox" class="carousel-inner">
+        <div class="item active"><img src="img/avans1.png" alt="Avans Hogeschool 1"/></div>
+        <div class="item"><img src="img/avans2.png" alt="Avans Hogeschool 2"/></div>
+        <div class="item"><img src="img/avans3.png" alt="Avans Hogeschool 3"/></div>
+        <div class="hero-text">
+          <h1>Informatica</h1>
+          <h3>Een opleiding voor jou?</h3>
+        </div>
       </div>
     </div>
     <div class="container-fluid">
@@ -86,13 +96,20 @@
           <p>Exercitation ut veniam culpa mollit ex tempor sunt consequat dolor Lorem veniam quis consequat est quis. Minim culpa consequat consequat ut proident qui laborum anim in excepteur adipisicing fugiat amet dolore aliqua. Nulla amet magna et qui magna ullamco pariatur ullamco ea est incididunt proident.</p>
         </div>
       </div>
-      <div id="contact" class="row">
+      <footer id="contact" class="row">
         <div class="col-md-12 subject-thumb">
-          <h2>Wat is informatica?</h2>
-          <p>Commodo dolor enim dolore amet eu do labore. Nulla mollit deserunt labore fugiat amet aute velit occaecat eiusmod sit incididunt cillum fugiat consectetur cillum. Nulla enim ea qui eiusmod velit adipisicing laborum. Dolore occaecat laborum Lorem deserunt ea magna velit mollit cupidatat culpa qui incididunt officia amet ullamco qui. Dolore proident id ut consectetur quis cupidatat tempor cillum. Consectetur aliquip aliquip in est ad duis reprehenderit elit adipisicing. Ex officia fugiat do eu sit elit aute ullamco nostrud exercitation proident enim aliquip. Excepteur incididunt quis tempor in velit laboris ad ut sit excepteur dolore fugiat excepteur enim in ipsum dolor.</p>
-          <p>Exercitation ut veniam culpa mollit ex tempor sunt consequat dolor Lorem veniam quis consequat est quis. Minim culpa consequat consequat ut proident qui laborum anim in excepteur adipisicing fugiat amet dolore aliqua. Nulla amet magna et qui magna ullamco pariatur ullamco ea est incididunt proident.</p>
+          <h2> <i aria-hidden="true" class="fa fa-user fa-fw"> </i><span>Contact</span></h2><b>Deze site wordt medemogelijk gemaakt door Sven Westerlaken en Cas De Pender uit klas 23IVT1C.</b>
+          <p>De site is gemaakt in opdracht van Avans Hogeschool voor de eindopdracht van de vakken Studeren op het HBO en Webdesign in het kader van de opleiding Informatica</p>
         </div>
-      </div>
+        <div class="col-md-6 subject-thumb">
+          <div class="profile-pic"></div>
+          <h3>Sven Westerlaken</h3>
+        </div>
+        <div class="col-md-6 subject-thumb">
+          <div class="profile-pic"></div>
+          <h3>Cas De Pender</h3>
+        </div>
+      </footer>
     </div>
     <div class="scripts">
       <script src="https://use.fontawesome.com/82381d76d8.js"></script>

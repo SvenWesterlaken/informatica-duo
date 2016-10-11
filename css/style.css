@@ -7691,8 +7691,12 @@ template {
   display: none;
 }
 
-body {
+* {
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #2E2E2E;
 }
 
 .divider {
@@ -7802,7 +7806,6 @@ nav .overlay {
 header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   z-index: 50;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -7854,24 +7857,93 @@ header .nav-menu span:hover, header .nav-menu span:active {
   text-decoration: none;
 }
 
-.hero-image {
-  background-image: url(img/placeholder.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding: 100px;
-  margin: 0;
-}
-
-.hero-image .container {
-  color: white;
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.hero-image .container h1, .hero-image .container h3 {
+.hero-text h1 {
+  color: #C6002A;
+  font-size: 80pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   margin: 0;
 }
 
-.hero-image .container h3 {
-  color: #C6002A;
+.hero-text h3 {
+  font-size: 20pt;
+  font-weight: 300;
+  color: #2E2E2E;
+  padding: 0.4em;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  background: white;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 0.3em;
+}
+
+@media (max-width: 1000px) {
+  .hero-text h1 {
+    font-size: 6em;
+  }
+  .hero-text h3 {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero-text h1 {
+    font-size: 5em;
+  }
+  .hero-text h3 {
+    font-size: 1.5em;
+    letter-spacing: 0.3em;
+    padding: 0.2em;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero-text h1 {
+    font-size: 4em;
+  }
+  .hero-text h3 {
+    font-size: 1.2em;
+    letter-spacing: 0.3em;
+    padding: 0.2em;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero-text h1 {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+  }
+  .hero-text h3 {
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    padding: 0.2em;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-text {
+    -webkit-transform: translate(-50%, -30%);
+        -ms-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+  }
+  .hero-text h1 {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+  }
+  .hero-text h3 {
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    padding: 0.2em;
+  }
 }
