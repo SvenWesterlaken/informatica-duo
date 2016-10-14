@@ -54,6 +54,7 @@
     hideNavBar($nav, $navitems, $overlay);
     toggleNavBar($nav, $navbtn, $navitems, $overlay);
     smoothScroll();
+
   });
 
 })(jQuery);

@@ -1,0 +1,47 @@
+.leerjaren
+  padding: 100px 0
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.4) inset, 0px -6px 16px rgba(0,0,0,0.4) inset
+  background:
+    color: $nav
+    image: url(/img/leerjaren.png)
+    size: cover
+    attachment: fixed
+    position: center center
+
+  .table-responsive
+    background: white
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.4)
+    max-width: 1000px
+    margin: 0 auto
+
+    small
+      color: $nav
+      position: relative
+      left: 10px
+
+    table.table
+      margin: 0
+      border: 1px solid $border
+
+      tr th, tr td
+        border-bottom: 1px solid $border
+
+      tr:last-child td
+       border-bottom: none
+
+      tr th:nth-child(1), tr td:nth-child(1)
+       border-right: 1px solid $border
+       font-weight: 700
+
+      tr:nth-child(1) th, tr:nth-child(2) td, tr:nth-child(3) td, tr:nth-child(4) td:nth-child(3), tr:nth-child(5) td:nth-child(3)
+        border-right: 1px solid $border
+
+  article
+    background: white
+    margin-bottom: 20px
+    padding: 5px 100px
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.4)
+    color: $nav
+
+    h2
+      margin-top: 0

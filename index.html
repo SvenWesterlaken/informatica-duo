@@ -1,28 +1,30 @@
 
 <html>
   <head>
-    <title> </title>
+    <title>Informatica | Duoopdracht</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="style.min.css"/>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/pace.min.js"></script>
   </head>
   <body>
     <nav>
       <div class="navbar">
         <div class="nav-header"><i aria-hidden="true" class="fa fa-times fa-2x menubtn"></i></div>
         <div class="nav-body"> 
-          <h2 href="http://www.avans.nl/" class="logo">Avans Hogeschool</h2>
+          <h2 class="logo">Avans Hogeschool</h2>
           <h2>Informatica</h2>
           <div class="divider"></div>
           <ul>
             <li class="nav-item"><a href="#intro"> <i aria-hidden="true" class="fa fa-home fa-fw"> </i><span>Intro</span></a></li>
-            <li class="nav-item"><a href="#over"> <i aria-hidden="true" class="fa fa-info-circle fa-fw"> </i><span>Over</span></a></li>
+            <li class="nav-item"><a href="#over"> <i aria-hidden="true" class="fa fa-info fa-fw"> </i><span>Over</span></a></li>
             <li class="nav-item"><a href="#leren"> <i aria-hidden="true" class="fa fa-graduation-cap fa-fw"> </i><span>Wat leer ik?</span></a></li>
             <li class="nav-item"><a href="#leerjaren"><i aria-hidden="true" class="fa fa-pie-chart fa-fw"> </i><span>Leerjaren</span></a></li>
             <li class="nav-item"><a href="#beroepsprofielen"> <i aria-hidden="true" class="fa fa-briefcase fa-fw"> </i><span>Beroepsprofielen</span></a></li>
+            <li class="nav-item"><a href="#toelatingeisen"> <i aria-hidden="true" class="fa fa-check fa-fw"> </i><span>Toelatingseisen</span></a></li>
             <li class="nav-item"><a href="#studiepunten"> <i aria-hidden="true" class="fa fa-star fa-fw"> </i><span>Studiepunten</span></a></li>
-            <li class="nav-item"><a href="#faq"><i aria-hidden="true" class="fa fa-question-circle fa-fw"></i><span>FAQ</span></a></li>
             <li class="nav-item"><a href="#contact"> <i aria-hidden="true" class="fa fa-user fa-fw"> </i><span>Contact</span></a></li>
           </ul>
         </div>
@@ -52,68 +54,183 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div id="over" class="row">
+    <div class="container-fluid page-wrapper">
+      <section id="over" class="row">
         <div class="col-md-12 subject-thumb">
-          <h2>Wat is informatica?</h2>
-          <p>Commodo dolor enim dolore amet eu do labore. Nulla mollit deserunt labore fugiat amet aute velit occaecat eiusmod sit incididunt cillum fugiat consectetur cillum. Nulla enim ea qui eiusmod velit adipisicing laborum. Dolore occaecat laborum Lorem deserunt ea magna velit mollit cupidatat culpa qui incididunt officia amet ullamco qui. Dolore proident id ut consectetur quis cupidatat tempor cillum. Consectetur aliquip aliquip in est ad duis reprehenderit elit adipisicing. Ex officia fugiat do eu sit elit aute ullamco nostrud exercitation proident enim aliquip. Excepteur incididunt quis tempor in velit laboris ad ut sit excepteur dolore fugiat excepteur enim in ipsum dolor.</p>
-          <p>Exercitation ut veniam culpa mollit ex tempor sunt consequat dolor Lorem veniam quis consequat est quis. Minim culpa consequat consequat ut proident qui laborum anim in excepteur adipisicing fugiat amet dolore aliqua. Nulla amet magna et qui magna ullamco pariatur ullamco ea est incididunt proident.</p>
-          <button>Meer</button>
+          <article>
+            <h2>Over informatica</h2>
+            <p>Informatica is een vrij nieuw en zeer snel ontwikkelend wetenschapsgebied met een enorm grote invloed in onze samenleving. Informatica zorgt door het maken van applicaties en software ervoor dat problemen of vraagstukken in de moderne wereld opgelost worden. </p>
+            <p>Een gevolg van deze snelle ontwikkelingen in dit gebied zijn de vele richtingen binnen het informatica werkgebied. Daarnaast is met het toenemende aantal elektronische apparaten, bij zowel consumenten als bedrijven, de vraag naar programmeurs enorm gestegen in de laatste jaren.</p>
+          </article>
         </div>
-      </div>
-      <div id="leren" class="row">
+      </section>
+      <section id="leren" class="row">
+        <article id="parralaxitem1" class="subject-thumb">
+          <h2>Wat leer ik op deze opleiding?</h2>
+          <p>In het eerste jaar van de opleiding leer je vooral basisvaardigheden. Zo maak je kennis met verschillende aspecten van het ICT werkveld. Dit komt vooral terug in de vorm van het programmeren met Java, maar ook onderwerpen als 'Webdesign', 'App Development' en kleinere vakken zoals 'Bedrijfsprocessen' worden behandeld. </p>
+          <p>Verder zal in de loop der tijd het aantal vakken afnemen, zal je meer in groepsverband moeten werken en meer gaan specialiseren. Verder ga je door stage meer met het beroepenveld van informatica in contact komen.</p>
+          <p>Tot slot ga je in de rest van de jaren, 'het verdiepende deel van de opleiding', vooral zelfstandig aan het werk. Hierbij ga je veel breder en dieper in op de stof van de vakken. Programmeertalen en technologieën staan hier meer centraal. Je leert in dit deel dan ook een onderzoekende houding aan te nemen. Aan het einde zou je klaar moeten zijn om je stage (in het 3<sup>e</sup> en 4<sup>e</sup> jaar) succesvol te kunnen uitvoeren.</p>
+        </article>
+      </section>
+      <section id="leerjaren" class="row"> 
         <div class="col-md-12 subject-thumb">
-          <h2>Wat is informatica?</h2>
-          <p>Commodo dolor enim dolore amet eu do labore. Nulla mollit deserunt labore fugiat amet aute velit occaecat eiusmod sit incididunt cillum fugiat consectetur cillum. Nulla enim ea qui eiusmod velit adipisicing laborum. Dolore occaecat laborum Lorem deserunt ea magna velit mollit cupidatat culpa qui incididunt officia amet ullamco qui. Dolore proident id ut consectetur quis cupidatat tempor cillum. Consectetur aliquip aliquip in est ad duis reprehenderit elit adipisicing. Ex officia fugiat do eu sit elit aute ullamco nostrud exercitation proident enim aliquip. Excepteur incididunt quis tempor in velit laboris ad ut sit excepteur dolore fugiat excepteur enim in ipsum dolor.</p>
-          <p>Exercitation ut veniam culpa mollit ex tempor sunt consequat dolor Lorem veniam quis consequat est quis. Minim culpa consequat consequat ut proident qui laborum anim in excepteur adipisicing fugiat amet dolore aliqua. Nulla amet magna et qui magna ullamco pariatur ullamco ea est incididunt proident.</p>
+          <article>
+            <h2>De verdeling: leerjaren</h2>
+            <p>De opleiding is ingedeeld in 4 jaar met elk 4 perioden. In het volgende schema is weergeven welke onderwerpen er per periode(s) globaal behandeld worden in deze 4 jaar.</p>
+            <p>Daarnaast worden de vakken 'Programmeren' en 'Studieloopbaanontwikkeling' (SLB) het hele 1<sup>e</sup> jaar gegeven. Ook is er in het eerste half jaar van het 4<sup>e</sup> jaar de mogelijkheid van een 'Minor'. Dit kan bijv. een verkorte versie van een andere opleiding, eventueel op een andere school, die je dat half jaar volgt. Zo kun je jezelf verder ontwikkelen en specialiseren.</p>
+          </article>
         </div>
-      </div>
-      <div id="leerjaren" class="row"> 
+        <div class="col-md-12 leerjaren">
+          <div class="table-responsive">
+            <table class="table">
+              <tr> 
+                <th>Leerjaar</th>
+                <th>Periode 1</th>
+                <th>Periode 2</th>
+                <th>Periode 3</th>
+                <th>Periode 4</th>
+              </tr>
+              <tr>
+                <td>Jaar 1</td>
+                <td>Progammeren - Basis van Java, Webdesign, Relationele Databases, Bedrijfsprocessen & enkele softskill* vakken</td>
+                <td>Nieuwe softskill* vakken, Progammeren en Relationele Databases</td>
+                <td>Onderzoeksvaardigheden, Software en project gerichte vakken</td>
+                <td>Computernetwerken & Project Software Engineering</td>
+              </tr>
+              <tr>
+                <td>Jaar 2</td>
+                <td>Server-side & Web Development</td>
+                <td>Client-side & Web Development</td>
+                <td>Business Intelligence</td>
+                <td>Computernetwerken</td>
+              </tr>
+              <tr>
+                <td>Jaar 3</td>
+                <td>Praktijk stage</td>
+                <td> </td>
+                <td>Enterprise Architecture & Applicatie-integratie</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jaar 4</td>
+                <td>Minor</td>
+                <td></td>
+                <td>Afstudeerstage</td>
+                <td></td>
+              </tr>
+            </table><small>* Softskill vakken zijn wat minder grote vakken. Denk hierbij aan interviewtechnieken, schrijvaardigheid, engels, beroepsoriëntatie etc.</small>
+          </div>
+        </div>
+      </section>
+      <section id="beroepsprofielen" class="row"> 
         <div class="col-md-12 subject-thumb">
-          <h2>Wat is informatica?</h2>
-          <p>Commodo dolor enim dolore amet eu do labore. Nulla mollit deserunt labore fugiat amet aute velit occaecat eiusmod sit incididunt cillum fugiat consectetur cillum. Nulla enim ea qui eiusmod velit adipisicing laborum. Dolore occaecat laborum Lorem deserunt ea magna velit mollit cupidatat culpa qui incididunt officia amet ullamco qui. Dolore proident id ut consectetur quis cupidatat tempor cillum. Consectetur aliquip aliquip in est ad duis reprehenderit elit adipisicing. Ex officia fugiat do eu sit elit aute ullamco nostrud exercitation proident enim aliquip. Excepteur incididunt quis tempor in velit laboris ad ut sit excepteur dolore fugiat excepteur enim in ipsum dolor.</p>
-          <p>Exercitation ut veniam culpa mollit ex tempor sunt consequat dolor Lorem veniam quis consequat est quis. Minim culpa consequat consequat ut proident qui laborum anim in excepteur adipisicing fugiat amet dolore aliqua. Nulla amet magna et qui magna ullamco pariatur ullamco ea est incididunt proident.</p>
+          <article> 
+            <h2>Beroepen, kijkje in de toekomst</h2>
+            <p>Na het behalen van je diploma kun je tegenwoordig bijna altijd direct aan het werk. Je kunt in de ICT-branche gaan werken, of een soortgelijke branche waar computers centraal staan. Hierin zal je vooral aan de slag gaan met softwareontwikkelingen die je hebt gehad tijdens je studie (en stage).</p>
+            <p>Hieronder staat een schema met enkele banen die je kan beoefenen met een diploma op zak. Hierbij is het salaris slechts een schatting. Dit, doordat het van veel factoren afhangt. Denk hierbij aan: werkgevers, functies, ervaring (in jaren) etc.</p>
+          </article>
         </div>
-      </div>
-      <div id="beroepsprofielen" class="row"> 
+        <div class="col-md-12 beroep">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tr> 
+                <th>Functie</th>
+                <th>Korte Beschrijving</th>
+                <th>Geschatte bruto inkomen (per maand)</th>
+              </tr>
+              <tr>
+                <td>Software Engineer</td>
+                <td>Een software engineer zet een vraag of probleem om tot een computerprogramma. De variatie bevind zich in zowel de opdracht als de programmeertaal. </td>
+                <td>Tussen de €2.000,- en €4.000,-</td>
+              </tr>
+              <tr>
+                <td>Informatieanalist</td>
+                <td>Als informatieanalist, analyseer je een bedrijfsproces. Hierdoor kan je verandering aanbrengen om een bedrijf efficiënter te laten werken.</td>
+                <td>Tussen de €2.000,- en €3.000,-</td>
+              </tr>
+              <tr>
+                <td>Java Programmeur </td>
+                <td>Als Java programmeur houd je je (alleen) bezig met het programmeren van software d.m.v. Java. Hoe meer je je hierin specialiseert, hoe hoger je inkomen zal worden.</td>
+                <td>Tussen de €3.000,- en €5.000,-</td>
+              </tr>
+              <tr>
+                <td>ICT-consultant</td>
+                <td>Bij deze baan informeer je bedrijven over hoe zij, d.m.v. I(C)T, bedrijfsdoelstellingen kunnen behalen.</td>
+                <td>Tussen de €3.000,- en €4.000,-</td>
+              </tr>
+              <tr>
+                <td>App Developer</td>
+                <td>Op aanvraag van een klant maak je je een mobiele applicatie. Het kenmerkende verschil met andere banen is dat je hier (bijna alleen) software maakt voor mobiele telefoons.</td>
+                <td>Tussen de €3.000,- en €4.000,-</td>
+              </tr>
+              <tr>
+                <td>Webdeveloper (Front- & Back-End Developer)</td>
+                <td>Als webdeveloper maak je (bijna alleen) websites. Dit kan visueel (front-end), maar zal na een informatica opleiding vooral op programmeren (back-end) gericht zijn.</td>
+                <td>Tussen de €2.000,- en €3.000,-</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="toelatingeisen" class="row">
         <div class="col-md-12 subject-thumb">
-          <h2>Wat is informatica?</h2>
-          <p>Commodo dolor enim dolore amet eu do labore. Nulla mollit deserunt labore fugiat amet aute velit occaecat eiusmod sit incididunt cillum fugiat consectetur cillum. Nulla enim ea qui eiusmod velit adipisicing laborum. Dolore occaecat laborum Lorem deserunt ea magna velit mollit cupidatat culpa qui incididunt officia amet ullamco qui. Dolore proident id ut consectetur quis cupidatat tempor cillum. Consectetur aliquip aliquip in est ad duis reprehenderit elit adipisicing. Ex officia fugiat do eu sit elit aute ullamco nostrud exercitation proident enim aliquip. Excepteur incididunt quis tempor in velit laboris ad ut sit excepteur dolore fugiat excepteur enim in ipsum dolor.</p>
-          <p>Exercitation ut veniam culpa mollit ex tempor sunt consequat dolor Lorem veniam quis consequat est quis. Minim culpa consequat consequat ut proident qui laborum anim in excepteur adipisicing fugiat amet dolore aliqua. Nulla amet magna et qui magna ullamco pariatur ullamco ea est incididunt proident.</p>
+          <article>
+            <h2>Toelatingeisen</h2>
+            <p>De toelatingseisen voor deze opleiding zijn niet erg streng. Je moet in het bezit zijn een havo- of vwo-diploma. Hierbij maakt het niet uit welk profiel je hebt en er zijn geen extra vakken nodig. </p>
+            <p>Wanneer je een mbo-opleiding voor deze opleiding hebt afgerond wordt er gekeken of deze vorige opleiding voldoende aansluit op de huidige informatica opleiding. Daarnaast moet je ook een positief advies ontvangen na het maken van de studiekeuzecheck van <strong>Avans Hogeschool. </strong></p>
+          </article>
         </div>
-      </div>
-      <div id="studiepunten" class="row">
+      </section>
+      <section id="avans" class="row"><a href="http://www.avans.nl/" class="logo"> <img src="img/avans.png"/></a></section>
+      <section id="studiepunten" class="row">
         <div class="col-md-12 subject-thumb">
-          <h2>Wat is informatica?</h2>
-          <p>Commodo dolor enim dolore amet eu do labore. Nulla mollit deserunt labore fugiat amet aute velit occaecat eiusmod sit incididunt cillum fugiat consectetur cillum. Nulla enim ea qui eiusmod velit adipisicing laborum. Dolore occaecat laborum Lorem deserunt ea magna velit mollit cupidatat culpa qui incididunt officia amet ullamco qui. Dolore proident id ut consectetur quis cupidatat tempor cillum. Consectetur aliquip aliquip in est ad duis reprehenderit elit adipisicing. Ex officia fugiat do eu sit elit aute ullamco nostrud exercitation proident enim aliquip. Excepteur incididunt quis tempor in velit laboris ad ut sit excepteur dolore fugiat excepteur enim in ipsum dolor.</p>
-          <p>Exercitation ut veniam culpa mollit ex tempor sunt consequat dolor Lorem veniam quis consequat est quis. Minim culpa consequat consequat ut proident qui laborum anim in excepteur adipisicing fugiat amet dolore aliqua. Nulla amet magna et qui magna ullamco pariatur ullamco ea est incididunt proident.</p>
+          <article>
+            <h2>Studiepunten</h2>
+            <p>Een studiepunt is een waarde waarmee de zwaarte van een opleiding (of een vak) wordt bepaald. De punten worden verdeeld onder de vakken, wanneer een vak veel tijd kost zal dit meer studiepunten opleveren dan andere vakken. De studiepunten zijn in de meeste gevallen te behalen door aanwezig te zijn in de les, opdrachten te maken en een goed cijfer te halen voor je tentamen of (praktische) (project)opdrachten.  </p>
+            <p>Er is een minimum aantal studiepunten vastgesteld waaraan een student moet voldoen om het eerste jaar te halen. Het minimum is <mark>52 studiepunten</mark> met een maximaal van 60. Bij het behalen van 60 studiepunten is een student ook meteen in het bezit van een propedeuse. </p>
+            <p>Een propedeus is een soort diploma voor het volledig beheersen van de basisvaardigheden d.m.v. het behalen van de genoemde 60 studiepunten. Hiermee kun je bijvoorbeeld en WO-opleiding van informatica gaan volgen aan een universiteit.</p>
+          </article>
         </div>
-      </div>
-      <div id="faq" class="row">
-        <div class="col-md-12 subject-thumb">
-          <h2>Wat is informatica?</h2>
-          <p>Commodo dolor enim dolore amet eu do labore. Nulla mollit deserunt labore fugiat amet aute velit occaecat eiusmod sit incididunt cillum fugiat consectetur cillum. Nulla enim ea qui eiusmod velit adipisicing laborum. Dolore occaecat laborum Lorem deserunt ea magna velit mollit cupidatat culpa qui incididunt officia amet ullamco qui. Dolore proident id ut consectetur quis cupidatat tempor cillum. Consectetur aliquip aliquip in est ad duis reprehenderit elit adipisicing. Ex officia fugiat do eu sit elit aute ullamco nostrud exercitation proident enim aliquip. Excepteur incididunt quis tempor in velit laboris ad ut sit excepteur dolore fugiat excepteur enim in ipsum dolor.</p>
-          <p>Exercitation ut veniam culpa mollit ex tempor sunt consequat dolor Lorem veniam quis consequat est quis. Minim culpa consequat consequat ut proident qui laborum anim in excepteur adipisicing fugiat amet dolore aliqua. Nulla amet magna et qui magna ullamco pariatur ullamco ea est incididunt proident.</p>
-        </div>
-      </div>
-      <footer id="contact" class="row">
-        <div class="col-md-12 subject-thumb">
-          <h2> <i aria-hidden="true" class="fa fa-user fa-fw"> </i><span>Contact</span></h2><b>Deze site wordt medemogelijk gemaakt door Sven Westerlaken en Cas De Pender uit klas 23IVT1C.</b>
-          <p>De site is gemaakt in opdracht van Avans Hogeschool voor de eindopdracht van de vakken Studeren op het HBO en Webdesign in het kader van de opleiding Informatica</p>
-        </div>
-        <div class="col-md-6 subject-thumb">
-          <div class="profile-pic"></div>
-          <h3>Sven Westerlaken</h3>
-        </div>
-        <div class="col-md-6 subject-thumb">
-          <div class="profile-pic"></div>
-          <h3>Cas De Pender</h3>
-        </div>
-      </footer>
+      </section>
     </div>
+    <footer class="container-fluid">
+      <div id="contact" class="row">
+        <div class="col-md-12">
+          <article>
+            <h2>Contact</h2><b>Dit eindproject is bedoeld als afsluiting voor zowel de vakken webdesign als Studeren op het HBO. Hierbij worden beiden vakken getoetst doormiddel van deze website. Daarnaast valt de gehele opdracht (met de hierbij behorende vakken) in het kader van de opleiding informatica aan Avans te Breda.</b>
+            <h3>Deze is gemaakt door:</h3>
+          </article>
+          <div class="col-md-6">
+            <div id="sven" class="profile-pic"></div>
+            <h3>Sven Westerlaken</h3>
+            <div class="about-item">
+              <h4><i class="fa fa-user" aria-hidden="true"></i> Studentennummer</h4><span>2110540</span>
+            </div>
+            <div class="about-item">
+              <h4><i class="fa fa-envelope" aria-hidden="true"></i> Email</h4><a href="mailto:&amp;#115;&amp;#103;&amp;#097;&amp;#119;&amp;#101;&amp;#115;&amp;#116;&amp;#101;&amp;#064;&amp;#097;&amp;#118;&amp;#097;&amp;#110;&amp;#115;&amp;#046;&amp;#110;&amp;#108;">&#115;&#103;&#097;&#119;&#101;&#115;&#116;&#101;&#064;&#097;&#118;&#097;&#110;&#115;&#046;&#110;&#108;</a>
+            </div>
+            <div class="about-item">
+              <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i> Klas</h4><span>23IVT1C</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="cas" class="profile-pic"></div>
+            <h3>Cas De Pender</h3>
+            <div class="about-item">
+              <h4><i class="fa fa-user" aria-hidden="true"></i> Studentennummer</h4><span>2108576</span>
+            </div>
+            <div class="about-item"> 
+              <h4><i class="fa fa-envelope" aria-hidden="true"></i> Email</h4><a href="mailto:&amp;#099;&amp;#099;&amp;#112;&amp;#101;&amp;#110;&amp;#100;&amp;#101;&amp;#114;&amp;#064;&amp;#097;&amp;#118;&amp;#097;&amp;#110;&amp;#115;&amp;#046;&amp;#110;&amp;#108;">&#099;&#099;&#112;&#101;&#110;&#100;&#101;&#114;&#064;&#097;&#118;&#097;&#110;&#115;&#046;&#110;&#108;</a>
+            </div>
+            <div class="about-item">
+              <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i> Klas</h4><span>23IVT1C</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <div class="scripts">
       <script src="https://use.fontawesome.com/82381d76d8.js"></script>
-      <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
       <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
       <script src="js/common.min.js"></script>
       <script src="css/1-tools/bootstrap/js/bootstrap.min.js"></script>

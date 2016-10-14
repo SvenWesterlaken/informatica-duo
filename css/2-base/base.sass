@@ -7,3 +7,41 @@ body
 .divider
   border: 1px solid white
   height: 1px
+
+article
+  max-width: 800px
+  margin: 0 auto
+  padding: 10px
+  text-align: center
+  color: white
+
+mark
+  color: white
+  background-color: $avans
+
+h4
+  text-transform: uppercase
+  margin: 5px
+
+h2
+  color: $avans
+
+a, a:visited, a:focus
+  color: $avans
+  outline: none
+  font-weight: 700
+  font-size: 16px
+  text-decoration: none
+  transition: all 0.3s ease-in-out
+
+  &:hover, &:active
+    text-decoration: none
+    outline: none
+    color: lighten($avans, 20)
+
+.page-wrapper
+  z-index: 3
+  position: relative
+
+.carousel
+  z-index: 3
